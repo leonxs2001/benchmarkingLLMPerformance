@@ -25,10 +25,10 @@ Beweise, dass die Summe aller Einheitswurzeln 0 ist: \sum_{k=0}^{n-1} e^{\frac{2
 Berechne beispielhaft wie viele Schokolinsen in einen Bus passen, unter der Bedingung, dass es sich um M&Ms mit Erdnuss handelt und der Bus 15 m lang ist.
 Schreibe eine politische Rede zum Mauerfall!
 Welche biologischen und physikalischen Ursachen gibt es, dass Menschen so unterschiedliche Körper haben?
-Erkläre diesen Python-Code und schreibe ihn in Java: 
+"Erkläre diesen Python-Code und schreibe ihn in Java: 
 import numpy as np
 a = np.arange(15).reshape(3, 5)
-print(a)
+print(a)"
 Schreibe mir ausführlich die Gründe zur Gründung der BRD und gehe dabei auf die wichtigesten Fakten ein.
 Womit verbringen Menschen die meiste Zeit? Schreibe mir dazu eine ausführliche Diskussion von zwei unterschiedlichen Meinungen.
 Beschreibe mir die Funktionsweise eines OLED Displays.
