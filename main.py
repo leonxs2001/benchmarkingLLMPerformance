@@ -4,8 +4,6 @@ import time
 import datetime
 import random
 
-from secret_settings import CHAT_GPT_API_KEY
-
 SOURCE_FILE_PROMPT = "Geben Sie den Pfad zu der Datei mit den Fragen für die LLMs an. Es sollten mindestends 20 Fragen enthalten sein. Bei keiner Angabe wird die Datei requestpool aus dem assets Ordner aufgerufen."
 DESTINATION_DIRECTORY_PROMPT = "Geben Sie den Pfad zu dem Ordner an, in welchem die Ergebniss gespeichert werden sollen. Bei keiner Angabe wird der Ordner der Ausführung verwendet."
 PYTHON_FILE_PATH = os.path.dirname(os.path.abspath(__file__))
