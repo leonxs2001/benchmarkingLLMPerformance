@@ -34,11 +34,11 @@ def start_benchmark_performance_llm(number_of_iterations=3):
 
     for i in range(number_of_iterations):
         print(f"{i}st Iteration.")
-        prompts = get_promptss_from_csv(source_path)
+        prompts = get_prompts_from_csv(source_path)
         result_list = list()
 
         for prompt in prompts:
-            result_list.append((prompt, benchmark_for_chat_gpt_pro_1_0(prompt), benchmark_for_gemini(prompt)))
+            result_list.append((prompt[0], benchmark_for_chat_gpt_pro_1_0(prompt[1]), benchmark_for_gemini(prompt[1])))
 
         write_result_list_in_csv_file(destination_path, result_list)
 
@@ -67,14 +67,14 @@ def benchmark_for_gemini(prompt):
     return len(response_gemini.candidates[0].content.parts[0].text), end_time - start_time
 
 
-def get_promptss_from_csv(path, number_of_prompts=20):
+def get_prompts_from_csv(path, number_of_prompts=20):
     with open(path, newline='') as csvfile:
-        csv_reader = csv.reader(csvfile, delimiter="|")
+        csv_reader = csv.reader(csvfile, delimiter=";")
 
         prompts = []
 
         for row in csv_reader:
-            prompts.append(row[0])
+            prompts.append((row[0], row[1]))
 
         return random.sample(prompts, number_of_prompts)
 
@@ -84,7 +84,7 @@ def write_result_list_in_csv_file(path, result_list):
     with open(result_path, 'w', newline='') as csvfile:
         csv_writer = csv.writer(csvfile, delimiter=';')
         csv_writer.writerow(
-            ["Prompts", "ChatGPT Anzahl Zeichen", "ChatGPT responsetime in Sekunden",
+            ["Prompt Id", "ChatGPT Anzahl Zeichen", "ChatGPT responsetime in Sekunden",
              "ChatGPT Responsegeschwindigkeit in Zeichen/Sekunden", "Gemini Anzahl Zeichen",
              "Gemini responsetime in seconds", "Gemini Responsegeschwindigkeit in Zeichen/Sekunden"])
 

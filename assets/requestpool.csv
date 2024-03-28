@@ -1,43 +1,43 @@
-Was ist das gr��te Land der Welt?
-Mir geht es gut.
-39+21
-Welche Farbe hat ein Gras?
-Wann geht die Sonne heute in Brandenburg unter?
-Wie lange halten Champions im K�hlschrank? Gibt mir nur eine Zeitspanne in Tagen.
-Wie alt ist die Erde?
-Wie viele Gummib�rchen sind ungef�hr in einer normalen T�te Haribos? 
-Wie alt wird ein Mensch im Durchschnitt? 
-Was ist die Wurzel aus 25?
-Wie lautet die Quadratwurzel von 144? 
-Wann wurde Albert Einstein geboren? 
-Sind Menschen berechenbar?
-Mache ein Vorschlag f�r ein Geschenk. 
-Wie viel kostet ein Sandwich? 
-Wieso feiern wir Oster?
-Welche Pflanze ist die beliebteste Pflanze in Europa?
-Wie ist die Entstehungsgeschichte von IKEA? 
-Woher kommt unser heutiges Zahlensystem?
-Was ist die am h�ufigsten ausge�bt Religion und warum?
-Wie kann ich am besten Schritt f�r Schritt einen Handstand lernen?
-Was ist fr�h am Morgen f�r eine Uhrzeit?
-Was ist der Unterschied zwischen einem Thermometer und einem Thermostat?
-Beweise, dass die Summe aller Einheitswurzeln 0 ist: \sum_{k=0}^{n-1} e^{\frac{2\pi ik}{n}} = 0
-Berechne beispielhaft wie viele Schokolinsen in einen Bus passen, unter der Bedingung, dass es sich um M&Ms mit Erdnuss handelt und der Bus 15 m lang ist.
-Schreibe eine politische Rede zum Mauerfall!
-Welche biologischen und physikalischen Ursachen gibt es, dass Menschen so unterschiedliche K�rper haben?
-"Erkl�re diesen Python-Code und schreibe ihn in Java:�
+1;Was ist das gr��te Land der Welt?
+2;Mir geht es gut.
+3;39+21
+4;Welche Farbe hat ein Gras?
+5;Wann geht die Sonne heute in Brandenburg unter?
+6;Wie lange halten Champions im K�hlschrank? Gibt mir nur eine Zeitspanne in Tagen.
+7;Wie alt ist die Erde?
+8;Wie viele Gummib�rchen sind ungef�hr in einer normalen T�te Haribos?
+9;Wie alt wird ein Mensch im Durchschnitt?
+10;Was ist die Wurzel aus 25?
+11;Wie lautet die Quadratwurzel von 144?
+12;Wann wurde Albert Einstein geboren?
+13;Sind Menschen berechenbar?
+14;Mache ein Vorschlag f�r ein Geschenk.
+15;Wie viel kostet ein Sandwich?
+16;Wieso feiern wir Oster?
+17;Welche Pflanze ist die beliebteste Pflanze in Europa?
+18;Wie ist die Entstehungsgeschichte von IKEA?
+19;Woher kommt unser heutiges Zahlensystem?
+20;Was ist die am h�ufigsten ausge�bt Religion und warum?
+21;Wie kann ich am besten Schritt f�r Schritt einen Handstand lernen?
+22;Was ist fr�h am Morgen f�r eine Uhrzeit?
+23;Was ist der Unterschied zwischen einem Thermometer und einem Thermostat?
+24;Beweise, dass die Summe aller Einheitswurzeln 0 ist: \sum_{k=0}^{n-1} e^{\frac{2\pi ik}{n}} = 0
+25;Berechne beispielhaft wie viele Schokolinsen in einen Bus passen, unter der Bedingung, dass es sich um M&Ms mit Erdnuss handelt und der Bus 15 m lang ist.
+26;Schreibe eine politische Rede zum Mauerfall!
+27;Welche biologischen und physikalischen Ursachen gibt es, dass Menschen so unterschiedliche K�rper haben?
+28;"Erkl�re diesen Python-Code und schreibe ihn in Java:�
 import numpy as np
 a = np.arange(15).reshape(3, 5)
 print(a)"
-Schreibe mir ausf�hrlich die Gr�nde zur Gr�ndung der BRD und gehe dabei auf die wichtigesten Fakten ein.
-Womit verbringen Menschen die meiste Zeit? Schreibe mir dazu eine ausf�hrliche Diskussion von zwei unterschiedlichen Meinungen.
-Beschreibe mir die Funktionsweise eines OLED Displays.
-Ich muss ein wissenschaftliches Paper f�r die Uni zum Vergleich zweier LLMs schreiben. Wie gehe ich daf�r am besten vor und schreibe mir solch ein Paper bespielhaft.
-Schreibe mir eine ausf�hrliche Hausarbeit �ber die Folgen des Faschismus in Italien nach Mussolinis Tot.
-Schreibe mir bitte eine ausf�hrliche Gedichtanalyse �ber den Osterspaziergang vom Goethe.
-Schreibe mit bitte einen Aufsatz �ber die Funktion der Enigma.
-Schreibe mir einen Aufsatz �ber den Vergleich der 2 Programmiersprachen Java und Python. Gehe dabei vor allem auf die Syntax, Geschwindigkeit und Entstehung ein.
-Wie kann ich mit GitHub Workflow alte Artifacts wieder l�schen? Schreibe ein YAML Skript und erkl�re es ausf�hrlich.
-Gib mir eine umfassende Erkl�rung der Theorien und Experimente in der Quantenmechanik, einschlie�lich der Kopenhagener Deutung, der Schr�dinger-Gleichung, des Doppelspaltexperiments und der Interpretation von Quantenverschr�nkung.
-Analysiere die Auswirkungen des Klimawandels auf das �kosystem der Arktis und die globalen Folgen f�r das Wetter, den Meeresspiegel und die Biodiversit�t.
-Welche Ausgabelayer in PyTorch gibt es f�r Regression? Erl�utere jeden ausf�hrlich.
+29;Schreibe mir ausf�hrlich die Gr�nde zur Gr�ndung der BRD und gehe dabei auf die wichtigesten Fakten ein.
+30;Womit verbringen Menschen die meiste Zeit? Schreibe mir dazu eine ausf�hrliche Diskussion von zwei unterschiedlichen Meinungen.
+31;Beschreibe mir die Funktionsweise eines OLED Displays.
+32;Ich muss ein wissenschaftliches Paper f�r die Uni zum Vergleich zweier LLMs schreiben. Wie gehe ich daf�r am besten vor und schreibe mir solch ein Paper bespielhaft.
+33;Schreibe mir eine ausf�hrliche Hausarbeit �ber Transistoren.
+34;Schreibe mir bitte eine ausf�hrliche Gedichtanalyse �ber den Osterspaziergang vom Goethe.
+35;Schreibe mit bitte einen Aufsatz �ber die Funktion der Enigma.
+36;Schreibe mir einen Aufsatz �ber den Vergleich der 2 Programmiersprachen Java und Python. Gehe dabei vor allem auf die Syntax, Geschwindigkeit und Entstehung ein.
+37;Wie kann ich mit GitHub Workflow alte Artifacts wieder l�schen? Schreibe ein YAML Skript und erkl�re es ausf�hrlich.
+38;Gib mir eine umfassende Erkl�rung der Theorien und Experimente in der Quantenmechanik, einschlie�lich der Kopenhagener Deutung, der Schr�dinger-Gleichung, des Doppelspaltexperiments und der Interpretation von Quantenverschr�nkung.
+39;Analysiere die Auswirkungen des Klimawandels auf das �kosystem der Arktis und die globalen Folgen f�r das Wetter, den Meeresspiegel und die Biodiversit�t.
+40;Welche Ausgabelayer in PyTorch gibt es f�r Regression? Erl�utere jeden ausf�hrlich.
