@@ -63,7 +63,6 @@ def benchmark_for_gemini(prompt):
     response_gemini = gemini_model.generate_content(prompt)
     end_time = time.time()
     print("Benchmark end gemini")
-    print(prompt, response_gemini)
     return len(response_gemini.candidates[0].content.parts[0].text), end_time - start_time
 
 
