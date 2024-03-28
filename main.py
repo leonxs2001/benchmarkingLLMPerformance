@@ -84,7 +84,7 @@ def write_result_list_in_csv_file(path, result_list):
     with open(result_path, 'w', newline='') as csvfile:
         csv_writer = csv.writer(csvfile, delimiter=';')
         csv_writer.writerow(
-            ["Fragen", "ChatGPT Anzahl Zeichen", "ChatGPT responsetime in Sekunden",
+            ["Prompts", "ChatGPT Anzahl Zeichen", "ChatGPT responsetime in Sekunden",
              "ChatGPT Responsegeschwindigkeit in Zeichen/Sekunden", "Gemini Anzahl Zeichen",
              "Gemini responsetime in seconds", "Gemini Responsegeschwindigkeit in Zeichen/Sekunden"])
 

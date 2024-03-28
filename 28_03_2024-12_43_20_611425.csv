@@ -1,24 +1,24 @@
-Fragen;ChatGPT Anzahl Zeichen;ChatGPT responsetime in Sekunden;ChatGPT Responsegeschwindigkeit in Zeichen/Sekunden;Gemini Anzahl Zeichen;Gemini responsetime in seconds;Gemini Responsegeschwindigkeit in Zeichen/Sekunden
+Prompts;ChatGPT Anzahl Zeichen;ChatGPT responsetime in Sekunden;ChatGPT Responsegeschwindigkeit in Zeichen/Sekunden;Gemini Anzahl Zeichen;Gemini responsetime in seconds;Gemini Responsegeschwindigkeit in Zeichen/Sekunden
 Was ist der Unterschied zwischen einem Thermometer und einem Thermostat?;394;3.181948184967041;123.82351223110224;686;3.7705273628234863;181.9374145812596
-Mache ein Vorschlag für ein Geschenk. ;382;1.9342467784881592;197.49289710518624;1385;5.92690372467041;233.68019194153834
-Wie kann ich am besten Schritt für Schritt einen Handstand lernen?;1560;6.949087858200073;224.48989447718185;1805;7.425472021102905;243.08218990930942
+Mache ein Vorschlag fï¿½r ein Geschenk. ;382;1.9342467784881592;197.49289710518624;1385;5.92690372467041;233.68019194153834
+Wie kann ich am besten Schritt fï¿½r Schritt einen Handstand lernen?;1560;6.949087858200073;224.48989447718185;1805;7.425472021102905;243.08218990930942
 Mir geht es gut.;75;1.3168540000915527;56.95392199498632;48;1.5362181663513184;31.245562024569146
 Wie alt wird ein Mensch im Durchschnitt? ;261;3.167954921722412;82.38753594956292;27;1.328197717666626;20.3282987471425
-Was ist die am häufigsten ausgeübt Religion und warum?;571;2.8481733798980713;200.47936829619363;1532;5.6229143142700195;272.45657934214637
+Was ist die am hï¿½ufigsten ausgeï¿½bt Religion und warum?;571;2.8481733798980713;200.47936829619363;1532;5.6229143142700195;272.45657934214637
 Wie ist die Entstehungsgeschichte von IKEA? ;995;5.10424017906189;194.93596795887285;1465;7.166885852813721;204.41235288055282
-Schreibe mit bitte einen Aufsatz über die Funktion der Enigma.;1798;8.289080142974854;216.91188515336503;3204;9.904670476913452;323.4837552110515
-Welche Ausgabelayer in PyTorch gibt es für Regression? Erläutere jeden ausführlich.;1980;8.895629167556763;222.58122081136827;1581;7.151905298233032;221.0599741009722
+Schreibe mit bitte einen Aufsatz ï¿½ber die Funktion der Enigma.;1798;8.289080142974854;216.91188515336503;3204;9.904670476913452;323.4837552110515
+Welche Ausgabelayer in PyTorch gibt es fï¿½r Regression? Erlï¿½utere jeden ausfï¿½hrlich.;1980;8.895629167556763;222.58122081136827;1581;7.151905298233032;221.0599741009722
 Wie alt ist die Erde?;43;1.5584166049957275;27.59210846583471;26;1.1831629276275635;21.974995491224764
 Berechne beispielhaft wie viele Schokolinsen in einen Bus passen, unter der Bedingung, dass es sich um M&Ms mit Erdnuss handelt und der Bus 15 m lang ist.;682;6.542705059051514;104.23823079973415;832;4.998890399932861;166.43693568700252
-Wie kann ich mit GitHub Workflow alte Artifacts wieder löschen? Schreibe ein YAML Skript und erkläre es ausführlich.;2084;11.557149648666382;180.32127845990811;1435;6.54509973526001;219.24799591201239
+Wie kann ich mit GitHub Workflow alte Artifacts wieder lï¿½schen? Schreibe ein YAML Skript und erklï¿½re es ausfï¿½hrlich.;2084;11.557149648666382;180.32127845990811;1435;6.54509973526001;219.24799591201239
 Wann geht die Sonne heute in Brandenburg unter?;55;1.8272099494934082;30.100536621557193;212;1.5526535511016846;136.54044062152533
-"Erkläre diesen Python-Code und schreibe ihn in Java: 
+"Erklï¿½re diesen Python-Code und schreibe ihn in Java:ï¿½
 import numpy as np
 a = np.arange(15).reshape(3, 5)
 print(a)";599;3.8428564071655273;155.87363578901443;1243;7.1672728061676025;173.42719240857835
-Schreibe mir eine ausführliche Hausarbeit über die Folgen des Faschismus in Italien nach Mussolinis Tot.;2389;12.20535397529602;195.733774279337;3892;12.946738958358765;300.61624108727545
-Gib mir eine umfassende Erklärung der Theorien und Experimente in der Quantenmechanik, einschließlich der Kopenhagener Deutung, der Schrödinger-Gleichung, des Doppelspaltexperiments und der Interpretation von Quantenverschränkung.;2347;11.455108165740967;204.8867602157806;2267;8.79678463935852;257.7077981262611
+Schreibe mir eine ausfï¿½hrliche Hausarbeit ï¿½ber die Folgen des Faschismus in Italien nach Mussolinis Tot.;2389;12.20535397529602;195.733774279337;3892;12.946738958358765;300.61624108727545
+Gib mir eine umfassende Erklï¿½rung der Theorien und Experimente in der Quantenmechanik, einschlieï¿½lich der Kopenhagener Deutung, der Schrï¿½dinger-Gleichung, des Doppelspaltexperiments und der Interpretation von Quantenverschrï¿½nkung.;2347;11.455108165740967;204.8867602157806;2267;8.79678463935852;257.7077981262611
 Schreibe eine politische Rede zum Mauerfall!;1528;7.048090696334839;216.7963021240055;3028;10.74376916885376;281.8377752174895
 Beweise, dass die Summe aller Einheitswurzeln 0 ist: \sum_{k=0}^{n-1} e^{\frac{2\pi ik}{n}} = 0;959;6.555894136428833;146.28058050406415;258;2.7065134048461914;95.32559474415827
 Welche Farbe hat ein Gras?;4;0.8070192337036133;4.95651136050748;4;1.1177873611450195;3.5784981464654866
-Wie lange halten Champions im Kühlschrank? Gibt mir nur eine Zeitspanne in Tagen.;59;0.8883566856384277;66.41476442269241;8;1.117523431777954;7.158686585454574
+Wie lange halten Champions im Kï¿½hlschrank? Gibt mir nur eine Zeitspanne in Tagen.;59;0.8883566856384277;66.41476442269241;8;1.117523431777954;7.158686585454574
