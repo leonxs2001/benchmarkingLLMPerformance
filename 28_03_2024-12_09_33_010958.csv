@@ -1,0 +1,24 @@
+Fragen;ChatGPT Anzahl Zeichen;ChatGPT responsetime in Sekunden;ChatGPT Responsegeschwindigkeit in Zeichen/Sekunden;Gemini Anzahl Zeichen;Gemini responsetime in seconds;Gemini Responsegeschwindigkeit in Zeichen/Sekunden
+Wie viel kostet ein Sandwich? ;383;6.534216642379761;58.61452427455963;205;2.3633522987365723;86.74119390054172
+Schreibe eine politische Rede zum Mauerfall!;1755;8.754301309585571;200.47288046601193;3167;11.193849325180054;282.923229355605
+Mache ein Vorschlag für ein Geschenk. ;276;2.316734552383423;119.13319966504372;1489;6.11701226234436;243.419489146052
+Was ist das größte Land der Welt?;38;1.5916190147399902;23.875060330444562;8;1.0397601127624512;7.694082415553981
+Berechne beispielhaft wie viele Schokolinsen in einen Bus passen, unter der Bedingung, dass es sich um M&Ms mit Erdnuss handelt und der Bus 15 m lang ist.;1060;7.418121814727783;142.89331268401367;616;4.426158428192139;139.17260531761056
+Schreibe mir bitte eine ausführliche Gedichtanalyse über den Osterspaziergang vom Goethe.;1900;11.879251480102539;159.94273740079115;2840;11.143375396728516;254.85994134539973
+Wieso feiern wir Oster?;476;4.427781820297241;107.50303861359765;796;3.5832087993621826;222.14725531531664
+Sind Menschen berechenbar?;573;2.47625470161438;231.397844343894;1747;5.776838302612305;302.4145576672972
+Analysiere die Auswirkungen des Klimawandels auf das Ökosystem der Arktis und die globalen Folgen für das Wetter, den Meeresspiegel und die Biodiversität.;1624;8.439244747161865;192.43428158025094;2837;10.500123500823975;270.18729825200364
+Schreibe mir ausführlich die Gründe zur Gründung der BRD und gehe dabei auf die wichtigesten Fakten ein.;1938;9.92575216293335;195.24968669248582;2464;9.341038703918457;263.78222787647593
+Womit verbringen Menschen die meiste Zeit? Schreibe mir dazu eine ausführliche Diskussion von zwei unterschiedlichen Meinungen.;1697;9.228691101074219;183.88306439279015;2764;8.698337316513062;317.7618778651845
+Welche Farbe hat ein Gras?;5;1.1554272174835205;4.327403686135958;4;1.0304350852966309;3.881855399797962
+Welche biologischen und physikalischen Ursachen gibt es, dass Menschen so unterschiedliche Körper haben?;1463;11.270671606063843;129.80592915269372;2072;6.849216461181641;302.5163552273736
+Schreibe mit bitte einen Aufsatz über die Funktion der Enigma.;2123;15.625922441482544;135.86397909950048;2822;8.881576299667358;317.736391017177
+Woher kommt unser heutiges Zahlensystem?;472;4.702730178833008;100.36722968382757;1345;6.530742406845093;205.94902022016055
+"Erkläre diesen Python-Code und schreibe ihn in Java: 
+import numpy as np
+a = np.arange(15).reshape(3, 5)
+print(a)";675;3.4711060523986816;194.46251131783956;1178;7.002295255661011;168.2305525531282
+Welche Pflanze ist die beliebteste Pflanze in Europa?;215;1.653533935546875;130.02454644445675;7;1.0617990493774414;6.5925845423428004
+Wie alt ist die Erde?;43;1.942845344543457;22.13248734427929;21;1.1964070796966553;17.552554106687897
+Wie kann ich mit GitHub Workflow alte Artifacts wieder löschen? Schreibe ein YAML Skript und erkläre es ausführlich.;1351;11.40813684463501;118.42424564142084;1337;5.932216644287109;225.3794964294786
+Was ist die am häufigsten ausgeübt Religion und warum?;477;3.128119707107544;152.4877705019365;1180;4.38902735710144;268.85227727978537

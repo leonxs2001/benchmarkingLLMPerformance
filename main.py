@@ -3,11 +3,24 @@ import os
 import time
 import datetime
 import random
+import google.generativeai as genai
+from openai import OpenAI
+
+from secret_settings import CHAT_GPT_API_KEY, GEMINI_API_KEY
 
 SOURCE_FILE_PROMPT = "Geben Sie den Pfad zu der Datei mit den Fragen für die LLMs an. Es sollten mindestends 20 Fragen enthalten sein. Bei keiner Angabe wird die Datei requestpool aus dem assets Ordner aufgerufen."
 DESTINATION_DIRECTORY_PROMPT = "Geben Sie den Pfad zu dem Ordner an, in welchem die Ergebniss gespeichert werden sollen. Bei keiner Angabe wird der Ordner der Ausführung verwendet."
 PYTHON_FILE_PATH = os.path.dirname(os.path.abspath(__file__))
 SOURCE_CSV_FILE_PATH = PYTHON_FILE_PATH + "\\assets\\requestpool.csv"
+CHAT_GPT_MODEL = "gpt-3.5-turbo-0125"
+GEMINI_MODEL = "gemini-pro"
+
+chat_gpt_client = OpenAI(
+    api_key=CHAT_GPT_API_KEY,
+)
+
+genai.configure(api_key=GEMINI_API_KEY)
+gemini_model = genai.GenerativeModel(GEMINI_MODEL)
 
 
 def start_benchmark_performance_llm(number_of_iterations=3):
@@ -19,65 +32,80 @@ def start_benchmark_performance_llm(number_of_iterations=3):
     if not destination_path:
         destination_path = PYTHON_FILE_PATH
 
-    questions = get_questions_from_csv(source_path)
-
-    for i in range(3):
+    for i in range(number_of_iterations):
+        print(f"{i}st Iteration.")
+        prompts = get_promptss_from_csv(source_path)
         result_list = list()
 
-        for question in questions:
-            result_list.append((question, benchmark_for_chat_gpt_pro_1_0(question), benchmark_for_gemini_3_5(question)))
+        for prompt in prompts:
+            result_list.append((prompt, benchmark_for_chat_gpt_pro_1_0(prompt), benchmark_for_gemini(prompt)))
 
         write_result_list_in_csv_file(destination_path, result_list)
 
 
-def benchmark_for_chat_gpt_pro_1_0(question):
+def benchmark_for_chat_gpt_pro_1_0(prompt):
+    print("Benchmark start chat gpt")
     start_time = time.time()
-    result = ask_chat_gpt_pro_1_0(question)
+    completion = chat_gpt_client.chat.completions.create(
+        model=CHAT_GPT_MODEL,
+        messages=[
+            {"role": "user", "content": prompt}
+        ]
+    )
     end_time = time.time()
-    return len(result), end_time - start_time
+    print("Benchmark end chat gpt")
+    return len(completion.choices[0].message.content), end_time - start_time
 
 
-def ask_chat_gpt_pro_1_0(question):
-    # TODO add code
-    return question
-
-
-def benchmark_for_gemini_3_5(question):
+def benchmark_for_gemini(prompt):
+    print("Benchmark start gemini")
     start_time = time.time()
-    result = ask_gemini_3_5(question)
+    response_gemini = gemini_model.generate_content(prompt)
     end_time = time.time()
-    return len(result), end_time - start_time
+    print("Benchmark end gemini")
+    print(prompt, response_gemini)
+    return len(response_gemini.candidates[0].content.parts[0].text), end_time - start_time
 
 
-def ask_gemini_3_5(question):
-    # TODO add code
-    return question
-
-
-def get_questions_from_csv(path, number_of_questions=20):
+def get_promptss_from_csv(path, number_of_prompts=20):
     with open(path, newline='') as csvfile:
         csv_reader = csv.reader(csvfile, delimiter="|")
 
-        questions = []
+        prompts = []
 
         for row in csv_reader:
-            questions.append(row[0])
+            prompts.append(row[0])
 
-        return random.sample(questions, number_of_questions)
+        return random.sample(prompts, number_of_prompts)
 
 
 def write_result_list_in_csv_file(path, result_list):
-    i = 0
-    result_path = os.path.join(path, datetime.datetime.now().strftime("%d_%m_%Y-%H_%M_%S_%f") + "_" + str(i) + ".csv")
-    while os.path.isfile(result_path):
-        result_path = os.path.join(path, datetime.datetime.now().strftime("%d_%m_%Y-%H_%M_%S_%f") + "_" + str(i) + ".csv")
-
+    result_path = os.path.join(path, datetime.datetime.now().strftime("%d_%m_%Y-%H_%M_%S_%f") + ".csv")
     with open(result_path, 'w', newline='') as csvfile:
         csv_writer = csv.writer(csvfile, delimiter=';')
-        csv_writer.writerow(["Fragen", "ChatGPT Anzahl Zeichen", "ChatGPT responsetime in seconds", "Gemini Anzahl Zeichen",
-                             "Gemini responsetime in seconds"])
+        csv_writer.writerow(
+            ["Fragen", "ChatGPT Anzahl Zeichen", "ChatGPT responsetime in Sekunden",
+             "ChatGPT Responsegeschwindigkeit in Zeichen/Sekunden", "Gemini Anzahl Zeichen",
+             "Gemini responsetime in seconds", "Gemini Responsegeschwindigkeit in Zeichen/Sekunden"])
+
+        print("starts writing information's")
         for result in result_list:
-            csv_writer.writerow([result[0], result[1][0], result[1][1], result[2][0], result[2][1]])
+            prompt = result[0]
+            chat_gpt_number_of_chars = result[1][0]
+            chat_gpt_response_time = result[1][1]
+            chat_gpt_response_speed = get_response_speed(chat_gpt_number_of_chars, chat_gpt_response_time)
+
+            gemini_number_of_chars = result[2][0]
+            gemini_response_time = result[2][1]
+            gemini_response_speed = get_response_speed(gemini_number_of_chars, gemini_response_time)
+            print("start writing dataset")
+            csv_writer.writerow([prompt, chat_gpt_number_of_chars, chat_gpt_response_time, chat_gpt_response_speed,
+                                 gemini_number_of_chars, gemini_response_time, gemini_response_speed])
+            print("end writing dataset")
+
+
+def get_response_speed(number_of_chars, response_time):
+    return number_of_chars / response_time
 
 
 if __name__ == '__main__':
